@@ -36,7 +36,9 @@ const App = () => {
   return (
     <div id="main">
       {/* Do not remove the main div */}
-      <HolidayList city={cityList} />
+      <React.StrictMode>
+        <HolidayList city={cityList} />
+      </React.StrictMode>
     </div>
   );
 };
